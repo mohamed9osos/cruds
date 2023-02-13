@@ -1,0 +1,136 @@
+:root{
+    --webkit-color: #e56f0f;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cruds{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+}
+input:focus{
+    background-color: var(--webkit-color);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.num input{
+    width: 20%;
+}
+
+#total{
+    background-color: #c03d3d;
+    border: none;
+    outline: none;
+    padding: 5px 8px;
+    color: white;
+}
+#total::before{
+    content: "total: ";
+}
+.inputs button,
+.outputs button{
+    transition: 0.3s;
+}
+button{
+    width: 100%;
+    height: 25px;
+    background-color: var(--webkit-color);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    /* transition: 0.3s; */
+}
+#search{
+    margin: 10px 0;
+}
+button:hover{
+    letter-spacing: 2px;
+}
+.btnsearch{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.btnsearch button{
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    border: 1px solid var(--webkit-color);
+    padding: 10px 0;
+}
+
+table th{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+th, td{
+    font-size: 12px;
+}
+td{
+    border: 1px solid var(--webkit-color);
+}
+tbody button{
+    border-radius: 0;
+    width: 70%;
+    transition: 0.3s;
+}
+tbody button:hover{
+    width: 100%;
+    background-color: #ff6200;
+    transition: 0s;
+}
+@media (max-width:767px) {
+    table{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        border: 1px solid var(--webkit-color);
+        padding: 10px 0;
+    }
+    
+    table th{
+        text-transform: uppercase;
+        font-size: 8px;
+    }
+    th, td{
+        font-size: 8px;
+    }
+    tbody button{
+        font-size: 6px;
+    }
+}
